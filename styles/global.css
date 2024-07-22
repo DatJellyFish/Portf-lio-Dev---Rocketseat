@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+}
+
+:root {
+  --font-family: "Asap", sans-serif;
+  --font-family-2: "Inconsolata", monospace;
+  --font-family-3: "Maven Pro", sans-serif;
+
+  /* == Asap == */
+  --text-lg: 700 56px/120% var(--font-family);
+  --text-md: 700 24px/120% var(--font-family);
+  --text-sm: 700 16px/120% var(--font-family);
+
+  /* == Inconsolata == */
+  --text-sub: 20px/120% var(--font-family-2);
+
+  /* == Maven Pro == */
+  --text-maven-md: 16px/140% var(--font-family-3);
+  --text-maven-sm: 14px/140% var(--font-family-3);
+
+  /* == Colors == */
+  --red: #e3646e;
+  --purple: #bb72e9;
+  --blue: #3996db;
+  --green: #82bc4f;
+  --yellow: #eabd5f;
+
+  --gray-100: #0d0e11;
+  --gray-200: #16181d;
+  --gray-300: #292c34;
+  --gray-400: #878ea1;
+  --gray-500: #c0c4ce;
+  --gray-600: #e2e4e9;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+
+  background-color: var(--gray-200);
+}
+
+#Intro {
+  display: flex;
+  padding: 120px 163px 57px 163px;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 94px;
+  align-self: stretch;
+
+  background: url(../assets/images/Background_Intro.png) lightgray 50% / cover
+    no-repeat;
+}
+
+#projects {
+  display: flex;
+  padding: 72px 120px 144px 120px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 56px;
+  align-self: stretch;
+}
+
+#services {
+  display: flex;
+  padding: 88px 120px 120px 120px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-self: stretch;
+
+  background: var(--gray-100);
+}
+
+#contact {
+  display: flex;
+  padding: 128px 120px 200px 120px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 48px;
+  align-self: stretch;
+
+  header {
+    p {
+      color: var(--purple);
+    }
+  }
+}
+
+h2 {
+  align-self: stretch;
+  text-align: center;
+  font: var(--text-md);
+  color: var(--gray-600);
+}
+
+p {
+  /* align-self: stretch;
+  text-align: center; */
+  font: var(--text-sub);
+  color: var(--red);
+}
